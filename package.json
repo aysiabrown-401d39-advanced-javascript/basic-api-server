@@ -1,0 +1,32 @@
+{
+  "name": "basic-api-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.15.0",
+    "express": "^4.17.1",
+    "jest": "^26.6.3",
+    "method-override": "^3.0.0",
+    "supertest": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "lint": "eslint **/*.js",
+    "test": "jest --coverage",
+    "test-watch": "jest --watchAll --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aysiabrown-401d39-advanced-javascript/basic-api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aysiabrown-401d39-advanced-javascript/basic-api-server/issues"
+  },
+  "homepage": "https://github.com/aysiabrown-401d39-advanced-javascript/basic-api-server#readme"
+}
