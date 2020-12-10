@@ -3,7 +3,7 @@
 
 
 ### Links & Resources
-- [CI/CD]()
+- [CI/CD](https://github.com/aysiabrown-401d39-advanced-javascript/basic-api-server/actions)
 - [Deployed Backend](https://aysiab-basic-api-server.herokuapp.com/)
 - No applicable Front End 
 
