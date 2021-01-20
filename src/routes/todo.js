@@ -33,8 +33,8 @@ function createTask(req, res) {
 function updateTask(req, res) {
     const obj = req.body;
     const id = req.params.id;
-    tasks.update(id, obj);
-    res.status(200).send('Task Complete!')
+    const update = tasks.update(id, obj);
+    res.status(200).json(update);
 }
 
 
