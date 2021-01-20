@@ -2,7 +2,8 @@
 
 class ToDoModel {
     constructor() {
-        this.task;
+        this.text;
+        this.completed;
         this.assignee;
         this.difficulty;
         this.id = 0;
@@ -27,9 +28,10 @@ class ToDoModel {
         // console.log(obj)
         if(!id) { return null; }
         let item = this.get(id);
-        item.task = obj.task || item.task;
+        item.text = obj.text || item.text;
         item.assignee = obj.assignee || item.assignee;
         item.difficulty = obj.difficulty ||  item.difficulty;
+        item.compeleted = obj.completed || item.completed;
         this.db[this.grabIndex(id)] = item;
         // console.log(obj)
         // console.log(pet)
