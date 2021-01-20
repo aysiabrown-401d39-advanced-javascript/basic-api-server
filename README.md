@@ -18,6 +18,7 @@ Setup
 - [Postman](https://www.postman.com/) is the recommended way to run your GET, POST, PUT & DELETE requests at the following routes
     - `/pets` 
     - `/show`
+    - `/todo`
 - Server is set up to innately run at `localhost:3000`
 
 ### Tests

@@ -12,6 +12,7 @@ const serverError = require('./error-handlers/500');
 const notFoundHandler = require('./error-handlers/404');
 const petRoutes = require('./routes/pet');
 const tvRoutes = require('./routes/tv-show');
+const todoRoutes = require('./routes/todo')
 
 // using middelware
 app.use(express.json());
@@ -19,6 +20,7 @@ app.use(logger);
 // app.use(validator);
 app.use(petRoutes);
 app.use(tvRoutes);
+app.use(todoRoutes);
 
 // setting up page not found & error handling 
 app.use('*', notFoundHandler);
