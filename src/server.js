@@ -4,6 +4,8 @@
 // dependencies 
 const express = require('express')
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 // middleware
 const logger = require('./middleware/logger');
@@ -21,6 +23,7 @@ app.use(logger);
 app.use(petRoutes);
 app.use(tvRoutes);
 app.use(todoRoutes);
+
 
 // setting up page not found & error handling 
 app.use('*', notFoundHandler);
