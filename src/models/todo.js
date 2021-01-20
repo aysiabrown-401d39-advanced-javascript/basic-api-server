@@ -31,7 +31,7 @@ class ToDoModel {
         item.text = obj.text || item.text;
         item.assignee = obj.assignee || item.assignee;
         item.difficulty = obj.difficulty ||  item.difficulty;
-        item.compelete = obj.complete || item.complete;
+        item.complete = obj.complete || item.complete;
         this.db[this.grabIndex(_id)] = item;
         // console.log(obj)
         // console.log(pet)
