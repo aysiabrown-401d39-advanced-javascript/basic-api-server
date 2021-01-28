@@ -14,7 +14,8 @@ const serverError = require('./error-handlers/500');
 const notFoundHandler = require('./error-handlers/404');
 const petRoutes = require('./routes/pet');
 const tvRoutes = require('./routes/tv-show');
-const todoRoutes = require('./routes/todo')
+const todoRoutes = require('./routes/todo');
+const productRoutes = require('./routes/products');
 
 // using middelware
 app.use(express.json());
@@ -23,6 +24,7 @@ app.use(logger);
 app.use(petRoutes);
 app.use(tvRoutes);
 app.use(todoRoutes);
+app.use(productRoutes);
 
 
 // setting up page not found & error handling 
